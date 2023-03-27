@@ -37,7 +37,7 @@ module.exports = function(RED) {
         node.on('input', function(msg) {
             let errorCodeObj = msg.payload
 
-            db.all(`SELECT * FROM "MappingScheme" WHERE Code = ${errorCodeObj.bitfield32Value}`, [], function(err, rows) {
+            db.all(`SELECT * FROM "MappingScheme" WHERE Code = ${errorCodeObj.uint32Value}`, [], function(err, rows) {
                 if (err) {
                     node.error(err.message);
                     return;
