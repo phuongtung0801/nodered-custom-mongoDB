@@ -1,0 +1,105 @@
+let msgObj = {
+  metricGroups: [
+    {
+      metrics: [
+        {
+          name: "SN",
+          unit: "",
+          strValue: "139F5006994001N270",
+          metricValue: "strValue",
+        },
+        { name: "A", unit: "A", floatValue: 0, metricValue: "floatValue" },
+        { name: "AphA", unit: "A", floatValue: 0, metricValue: "floatValue" },
+        { name: "AphB", unit: "A", floatValue: 0, metricValue: "floatValue" },
+        { name: "AphC", unit: "A", floatValue: 0, metricValue: "floatValue" },
+        {
+          name: "PPVphAB",
+          unit: "V",
+          floatValue: 0,
+          metricValue: "floatValue",
+        },
+        {
+          name: "PPVphBC",
+          unit: "V",
+          floatValue: 0,
+          metricValue: "floatValue",
+        },
+        {
+          name: "PPVphCA",
+          unit: "V",
+          floatValue: 0,
+          metricValue: "floatValue",
+        },
+        { name: "PhVphA", unit: "V", floatValue: 0, metricValue: "floatValue" },
+        { name: "PhVphB", unit: "V", floatValue: 0, metricValue: "floatValue" },
+        { name: "PhVphC", unit: "V", floatValue: 0, metricValue: "floatValue" },
+        { name: "W", unit: "W", int32Value: 0, metricValue: "int32Value" },
+        { name: "Hz", unit: "Hz", floatValue: 0, metricValue: "floatValue" },
+        { name: "VA", unit: "VA", int32Value: 0, metricValue: "int32Value" },
+        { name: "VAr", unit: "var", int32Value: 0, metricValue: "int32Value" },
+        {
+          name: "WH",
+          unit: "Wh",
+          uint32Value: 243663465,
+          metricValue: "uint32Value",
+        },
+        { name: "DCA", unit: "A", floatValue: 0, metricValue: "floatValue" },
+        { name: "DCV", unit: "V", floatValue: 0, metricValue: "floatValue" },
+        { name: "DCW", unit: "W", int32Value: 0, metricValue: "int32Value" },
+        { name: "PF", unit: "Pct", floatValue: 0, metricValue: "floatValue" },
+        {
+          name: "TmpCab",
+          unit: "C",
+          int32Value: 40,
+          metricValue: "int32Value",
+        },
+        {
+          name: "TmpSnk",
+          unit: "C",
+          int32Value: 33,
+          metricValue: "int32Value",
+        },
+        {
+          name: "EvtVnd1",
+          unit: "",
+          bitfield32Value: 0,
+          metricValue: "bitfield32Value",
+        },
+        {
+          name: "EvtVnd2",
+          unit: "",
+          bitfield32Value: 0,
+          metricValue: "bitfield32Value",
+        },
+        {
+          name: "EvtVnd3",
+          unit: "",
+          bitfield32Value: 0,
+          metricValue: "bitfield32Value",
+        },
+        {
+          name: "EvtVnd4",
+          unit: "",
+          bitfield32Value: 0,
+          metricValue: "bitfield32Value",
+        },
+      ],
+      timestamp: "1679859964082",
+      deviceInfo: {
+        model: "SHP 75",
+        manufacturer: "SMA",
+        serialNumber: "139F5006994001N270",
+        driverVersion: "2.00.044-2.0.2",
+        deviceId: "139",
+      },
+    },
+  ],
+  siteInfo: { tenant: "PECOM", location: "An Thanh 5" },
+};
+
+let errorCodeObj = {
+  name: "WibuLord",
+  unit: "",
+  bitfield32Value: 0,
+  metricValue: "bitfield32Value",
+};
