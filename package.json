@@ -5,7 +5,7 @@
   "main": "index.js",
   "node-red": {
     "nodes": {
-      "mapping": "lower-case.js"
+      "mapping": "mapping.js"
     }
   },
   "scripts": {

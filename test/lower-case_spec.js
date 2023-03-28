@@ -1,14 +1,14 @@
 var helper = require("node-red-node-test-helper");
-var lowerNode = require("../lower-case.js");
+var lowerNode = require("../mapping.js");
 
-describe('lower-case Node', function () {
+describe('mapping Node', function () {
 
   afterEach(function () {
     helper.unload();
   });
 
   it('should be loaded', function (done) {
-    var flow = [{ id: "n1", type: "lower-case", name: "test name" }];
+    var flow = [{ id: "n1", type: "mapping", name: "test name" }];
     helper.load(lowerNode, flow, function () {
       var n1 = helper.getNode("n1");
       n1.should.have.property('name', 'test name');
@@ -17,7 +17,7 @@ describe('lower-case Node', function () {
   });
 
   it('should make payload lower case', function (done) {
-    var flow = [{ id: "n1", type: "lower-case", name: "test name",wires:[["n2"]] },
+    var flow = [{ id: "n1", type: "mapping", name: "test name",wires:[["n2"]] },
     { id: "n2", type: "helper" }];
     helper.load(lowerNode, flow, function () {
       var n2 = helper.getNode("n2");
