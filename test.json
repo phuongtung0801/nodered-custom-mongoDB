@@ -1,0 +1,8 @@
+{
+  "Code": 10001,
+  "Error_name": "GROUND_FAULT",
+  "SMA_110": 106,
+  "SMA_100": 1,
+  "SMA_75": 1,
+  "SGX_110": null
+}
