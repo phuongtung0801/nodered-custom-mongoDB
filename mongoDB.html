@@ -1,0 +1,84 @@
+<script type="text/javascript">
+    RED.nodes.registerType('mongoDBCustom', {
+        category: 'function',
+        color: '#F3E99F',
+        defaults: {
+            name: { value: "mongoDBCustom" },
+            comment: { value: "This is my custom node." }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "leaf.png",
+        label: function () {
+            return this.name;
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="mongoDBCustom">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="mongoDBCustom">
+    <h2>Example message input</h2>
+
+    <p>The following is an example message input that you could pass to the <code>mongoDBCustom</code> node:</p>
+
+    <table>
+    <thead>
+        <tr>
+        <th>Property</th>
+        <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>msg.DBName</code></td>
+            <td><code>"myMongoTest"</code></td>
+        </tr>
+        <tr>
+        <td><code>msg.schema</code></td>
+        <td>
+            <pre>
+                {
+                "name": {
+                    type: String,
+                    required: true,
+                    unique: true
+                },
+                "age": Number,
+                "email": {
+                    type: String,
+                    required: true
+                }
+                }
+            </pre>
+        </td>
+        </tr>
+        <tr>
+        <td><code>msg.modelName</code></td>
+        <td><code>"UsersTest"</code></td>
+        </tr>
+        <tr>
+        <td><code>msg.method</code></td>
+        <td><code>"create"</code></td>
+        </tr>
+        <tr>
+        <td><code>msg.query</code></td>
+        <td>
+            <pre>
+                {
+                "name": "Trang",
+                "age": 23,
+                "email": "phuongtung0801@gmail.com"
+                }
+            </pre>
+        </td>
+        </tr>
+    </tbody>
+    </table>
+  
+</script>
